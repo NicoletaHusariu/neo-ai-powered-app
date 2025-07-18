@@ -25,6 +25,17 @@ Built with **React** and **TypeScript**, this frontend interfaces with a backend
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/neo-ai-assistant.git
-cd neo-ai-assistant/frontend
+git clone git@github.com:NicoletaHusariu/neo-ai-powered-app.git
+cd neo-ai-powered-app/frontend
 ```
+
+# With Yarn
+
+yarn install
+yarn start
+
+# Or with npm
+
+npm install
+npm start
+This will start the frontend on http://localhost:3000 by default.
