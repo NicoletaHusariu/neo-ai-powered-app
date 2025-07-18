@@ -1,0 +1,17 @@
+# Sensitive environment files
+.env
+neo-ai-powered-frontend/.env
+neo-ai-powered-backend/.env
+
+# Node modules & build
+node_modules
+dist
+
+# Logs & system
+npm-debug.log*
+yarn-error.log*
+
+# Phoenix Elixir
+/_build
+/deps
+erl_crash.dump

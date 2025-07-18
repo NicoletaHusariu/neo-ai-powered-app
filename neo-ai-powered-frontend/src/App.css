@@ -1,0 +1,570 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Layout Classes */
+.app-container {
+  @apply min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100;
+}
+
+.hero-section {
+  @apply relative bg-white overflow-hidden;
+}
+
+.hero-content-wrapper {
+  @apply max-w-7xl mx-auto;
+}
+
+.hero-content-container {
+  @apply relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32;
+}
+
+.hero-main-content {
+  @apply mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28;
+}
+
+.hero-text-container {
+  @apply sm:text-center lg:text-left;
+}
+
+.hero-title {
+  @apply text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl;
+}
+
+.hero-title-primary {
+  @apply block xl:inline;
+}
+
+.hero-title-accent {
+  @apply block text-indigo-600 xl:inline;
+}
+
+.hero-description {
+  @apply mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0;
+}
+
+.hero-image-container {
+  @apply lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2;
+}
+
+.hero-image {
+  @apply h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full;
+}
+
+.main-content-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12;
+}
+
+.tab-content-area {
+  @apply mt-8;
+}
+
+/* Header Classes */
+.app-header {
+  @apply bg-white shadow-sm;
+}
+
+.header-content {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.header-inner {
+  @apply flex items-center justify-between h-16;
+}
+
+.header-logo-container {
+  @apply flex items-center;
+}
+
+.header-logo {
+  @apply flex-shrink-0;
+}
+
+.app-title {
+  @apply text-2xl font-bold text-gray-900;
+}
+
+.header-badge-container {
+  @apply flex items-center space-x-2;
+}
+
+.powered-by-badge {
+  @apply bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium;
+}
+
+/* Tab Navigation Classes */
+.tab-navigation-container {
+  @apply border-b border-gray-200;
+}
+
+.tab-navigation-list {
+  @apply -mb-px flex space-x-8;
+}
+
+.tab-button {
+  @apply whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm flex items-center space-x-2 transition-colors;
+}
+
+.tab-button-active {
+  @apply border-indigo-500 text-indigo-600;
+}
+
+.tab-button-inactive {
+  @apply border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300;
+}
+
+.tab-icon {
+  /* No additional styles needed */
+}
+
+.tab-label {
+  /* No additional styles needed */
+}
+
+/* Feature Card Classes */
+.feature-card {
+  @apply bg-white rounded-lg shadow p-6;
+}
+
+.feature-card-title {
+  @apply text-lg font-medium text-gray-900 mb-4;
+}
+
+.feature-card-content {
+  @apply space-y-4;
+}
+
+/* Form Classes */
+.form-field-container {
+  /* No additional styles needed - varies by context */
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 mb-2;
+}
+
+.form-input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500;
+}
+
+.form-textarea {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 resize-none;
+}
+
+.form-select {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500;
+}
+
+/* Button Classes */
+.primary-button {
+  @apply bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+}
+
+.secondary-button {
+  @apply px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+}
+
+.icon-button {
+  @apply p-2 border border-gray-300 rounded-md text-gray-600 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.danger-button {
+  @apply text-red-500 hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 rounded p-1;
+}
+
+/* Specific Feature Buttons */
+.analyze-calories-button {
+  @apply primary-button flex-1;
+}
+
+.translate-text-button {
+  @apply primary-button flex-1;
+}
+
+.summarize-pdf-button {
+  @apply primary-button flex-1;
+}
+
+.clear-form-button {
+  @apply secondary-button;
+}
+
+.swap-languages-button {
+  @apply icon-button ml-2;
+}
+
+.remove-file-button {
+  @apply danger-button;
+}
+
+.copy-to-clipboard-button {
+  @apply text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 rounded p-1;
+}
+
+/* File Upload Classes */
+.file-upload-container {
+  @apply mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md hover:border-gray-400 transition-colors;
+}
+
+.file-upload-content {
+  @apply space-y-1 text-center;
+}
+
+.file-upload-icon {
+  @apply mx-auto h-12 w-12 text-gray-400;
+}
+
+.file-upload-text-container {
+  @apply flex text-sm text-gray-600;
+}
+
+.file-upload-button-text {
+  @apply relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500;
+}
+
+.file-upload-drag-text {
+  @apply pl-1;
+}
+
+.file-upload-size-hint {
+  @apply text-xs text-gray-500;
+}
+
+.file-upload-demo-note {
+  @apply text-xs text-amber-600;
+}
+
+.uploaded-file-display {
+  @apply mt-2 p-3 bg-gray-50 rounded-md flex items-center justify-between;
+}
+
+.uploaded-file-info {
+  @apply flex items-center;
+}
+
+.uploaded-file-icon {
+  @apply h-5 w-5 text-red-500 mr-2;
+}
+
+.uploaded-file-name {
+  @apply text-sm text-gray-600;
+}
+
+.uploaded-file-size {
+  @apply text-xs text-gray-500 ml-2;
+}
+
+/* Results Display Classes */
+.results-container {
+  @apply mt-6 bg-gray-50 rounded-lg p-4;
+  animation: slideIn 0.3s ease-out;
+}
+
+.results-header {
+  @apply flex items-center justify-between mb-4;
+}
+
+.results-title {
+  @apply text-xl font-semibold text-gray-900;
+}
+
+.results-badge {
+  @apply bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.results-content {
+  @apply space-y-3;
+}
+
+.result-item {
+  @apply bg-white p-4 rounded-lg border border-gray-200;
+  animation: slideInUp 0.4s ease-out;
+}
+
+.result-item-header {
+  @apply flex justify-between items-start mb-2;
+}
+
+.result-item-title {
+  @apply font-medium text-gray-900;
+}
+
+.result-item-value {
+  @apply text-lg font-semibold text-indigo-600;
+}
+
+.result-item-details {
+  @apply text-sm text-gray-600;
+}
+
+/* Translation Results Classes */
+.translation-results-container {
+  @apply results-container;
+}
+
+.translation-results-title {
+  @apply text-lg font-semibold text-gray-900 mb-4;
+}
+
+.translation-results-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.translation-original-container {
+  @apply result-item;
+}
+
+.translation-result-container {
+  @apply result-item;
+}
+
+.translation-text-header {
+  @apply flex justify-between items-center mb-2;
+}
+
+.translation-text-label {
+  @apply font-medium text-gray-700;
+}
+
+.translation-text-content {
+  @apply text-gray-900 whitespace-pre-wrap;
+}
+
+/* Summary Results Classes */
+.summary-results-container {
+  @apply results-container;
+}
+
+.summary-results-title {
+  @apply text-lg font-semibold text-gray-900 mb-4;
+}
+
+.summary-results-content {
+  @apply space-y-4;
+}
+
+.summary-text-container {
+  @apply result-item;
+}
+
+.summary-keypoints-container {
+  @apply result-item;
+}
+
+.summary-stats-container {
+  @apply result-item;
+}
+
+.summary-text-header {
+  @apply flex justify-between items-center mb-2;
+}
+
+.summary-text-label {
+  @apply font-medium text-gray-700;
+}
+
+.summary-text-content {
+  @apply text-gray-900 whitespace-pre-wrap leading-relaxed;
+}
+
+.summary-keypoints-list {
+  @apply space-y-2;
+}
+
+.summary-keypoint-item {
+  @apply flex items-start;
+}
+
+.summary-keypoint-bullet {
+  @apply text-indigo-600 mr-2 mt-1;
+}
+
+.summary-keypoint-text {
+  @apply text-gray-900;
+}
+
+.summary-stats-content {
+  @apply flex items-center justify-between;
+}
+
+.summary-stats-label {
+  @apply text-sm font-medium text-gray-700;
+}
+
+.summary-stats-value {
+  @apply text-sm text-gray-600;
+}
+
+.summary-word-count {
+  @apply font-semibold text-gray-900;
+}
+
+/* Error Message Classes */
+.error-message-container {
+  @apply bg-red-50 border border-red-200 rounded-md p-4 mb-4 error-message;
+}
+
+.error-message-content {
+  @apply flex justify-between items-start;
+}
+
+.error-message-main {
+  @apply flex;
+}
+
+.error-message-icon-container {
+  @apply flex-shrink-0;
+}
+
+.error-message-icon {
+  @apply h-5 w-5 text-red-400;
+}
+
+.error-message-text-container {
+  @apply ml-3;
+}
+
+.error-message-title {
+  @apply text-sm font-medium text-red-800;
+}
+
+.error-message-description {
+  @apply mt-2 text-sm text-red-700;
+}
+
+.error-message-dismiss-button {
+  @apply text-red-400 hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2;
+}
+
+/* Loading Spinner Classes */
+.loading-spinner-container {
+  @apply flex justify-center items-center py-4;
+}
+
+.loading-spinner {
+  @apply animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600;
+}
+
+/* Footer Classes */
+.app-footer {
+  @apply bg-white border-t border-gray-200 mt-12;
+}
+
+.footer-content {
+  @apply max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8;
+}
+
+.footer-inner {
+  @apply text-center space-y-4;
+}
+
+.footer-description {
+  @apply text-gray-600;
+}
+
+.footer-demo-text {
+  @apply text-sm text-blue-800;
+}
+
+.footer-security-notice {
+  @apply p-4 bg-yellow-50 rounded-lg max-w-2xl mx-auto;
+}
+
+.footer-security-text {
+  @apply text-sm text-yellow-800;
+}
+
+.footer-notice-title {
+  @apply font-semibold;
+}
+
+/* Form Grid Classes */
+.form-grid-container {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.form-grid-item {
+  /* No additional styles needed */
+}
+
+.form-grid-item-with-button {
+  @apply flex items-end;
+}
+
+.form-grid-item-flex {
+  @apply flex-1;
+}
+
+/* Button Group Classes */
+.button-group {
+  @apply flex gap-3;
+}
+
+.button-group-primary {
+  @apply flex-1;
+}
+
+.button-group-secondary {
+  /* No additional styles needed */
+}
+
+/* Utility Classes */
+.screen-reader-only {
+  @apply sr-only;
+}
+
+/* Animation Classes */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.error-message {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-text-container {
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .tab-navigation-list {
+    flex-direction: column;
+    space-y: 2;
+  }
+
+  .form-grid-container {
+    grid-template-columns: 1fr;
+  }
+}
